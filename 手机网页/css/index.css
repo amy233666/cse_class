@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+html{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/*容器样式开始*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1d0e32;
+    border-radius: 2rem;
+}
+/*容器样式结束*/
+
+/*功能区样式开始*/
+.function{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.notice_container{
+    position: relative;
+}
+.notice_container .text{
+    position: absolute;
+    top: 0.7rem;
+    left: -0.3rem;
+    color: white;
+    width: 0.8rem;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.55rem;
+    padding: 0.05rem;
+    border-color: white;
+    border-width: 0.1rem;
+    border-style: solid;
+    background-color:crimson;
+    border-radius: 50%;
+}
+.set_up,.notice{
+    width: 2.5rem;
+}
+/*功能区样式结束*/
+
+/*内容样式开始*/
+/*头像样式开始*/
+.profile_picture_container{
+    display: flex;
+    justify-content:center;
+    padding-top: 1rem;
+}
+.profile_picture{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+/*头像样式结束*/
+
+/*文本样式开始*/
+.content .text{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top: 1.2rem;
+}
+.content .text h1{
+    color: white;
+    font-size: 2rem;
+}
+.content .text p{
+    color: #d5c6e0;
+    text-align: center;
+    line-height: 1.7rem;
+}
+/*文本样式结束*/
+
+/*标签样式开始*/
+.label{
+    padding-top: 1.7rem;
+}
+.label ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+.label ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 5.2rem;
+    height: 5rem;
+    background-color: #d5c6e0;
+    border-radius: 0.8rem;
+}
+.label ul li .value{
+    color: #1d0e32;
+    padding-top: 0.5rem;
+}
+.label ul li .name{
+    color: #464647;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+/*标签样式结束*/
+
+/*选项卡样式开始*/
+.tab{
+    padding-top: 1.7rem;
+}
+.tab ul{
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+.tab ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 5.2rem;
+    height: 2rem;
+    background-color: #d5c6e0;
+    border-radius: 1rem;
+}
+.tab ul .item_change{
+    color: white;
+    font-size: 0.87rem;
+    background-color: #3b46f1;
+}
+.tab ul .item{
+    color: #d8d3d3;
+    font-size: 0.87rem;
+    background-color: #2c2a91;
+}
+/*选项卡样式结束*/
+
+/*详细内容样式开始*/
+.details{
+    color: white;
+    padding-top: 1.7rem;
+}
+.details ul{
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+.details ul .item{
+    position: relative;
+    height: 14rem;
+}
+.details ul .item .message{
+    position: absolute;
+    width: calc(100% - 1.4rem);
+    height: calc(63% - 1.4rem);
+    background-color: #967aa1;
+    border-radius: 0.8rem;
+    z-index: 2;
+    padding: 0.7rem;
+}
+.details ul .item .message .note{
+    display: flex;
+    justify-content: space-between;
+}
+.details ul .item .message .note .left{
+    font-size: 0.8rem;
+}
+.details ul .item .message .note .right{
+    font-size: 0.7rem;
+    color: #c4c4c4;
+}
+.details ul .item .message .message_text{
+    padding-top: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.details ul .item .message .bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.details ul .item .message .bottom .left{
+    font-size: 0.7rem;
+    color: #c3afc4;
+}
+.details ul .item .message .bottom .right{
+    font-size: 0.7rem;
+}
+.details ul .item .message .bottom .right .thumbs_up{
+    padding-left: 1.3rem;
+    padding-right: 1rem;
+    background-image: url(../images/thumbs-up.svg);
+    background-size: 1.2rem; /* 或者 contain, 100px 50px, 50% 50% */
+    background-repeat: no-repeat;
+    background-position: 0rem -0.07rem;
+}
+.details ul .item .message .bottom .right .browse{
+    padding-left: 1.3rem;
+    background-image: url(../images/browse.svg);
+    background-size: 1.2rem; /* 或者 contain, 100px 50px, 50% 50% */
+    background-repeat: no-repeat;
+    background-position: 0rem -0.07rem;
+}
+.details ul .item .comment{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    position: absolute;
+    width: 100%;
+    height: 63%;
+    background-color: #9196ec;
+    border-radius: 0.8rem;
+    bottom: 0rem;
+    z-index: 1;
+}
+.details ul .item .comment .picture_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+}
+.details ul .item .comment .profile_picture{
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+}
+.details ul .item .comment .name{
+    font-size: 0.7rem;
+    color: #d9d7d6;
+}
+.details ul .item .comment .comment_text{
+    width: 60%;
+}
+.details_about{
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+.details_about .div1,.details_about .div2,.details_about .div3{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 0.8rem;
+    background-color: #d5c6e0;
+    color: #1d0e32;
+    min-height: 6rem;
+    margin-bottom: 1.3rem;
+}
+/*详细内容样式结束*/
+
+/*内容样式结束*/
+
+/*导航样式开始*/
+.navigation{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 4rem;
+    position:fixed;
+    bottom: 0rem;
+    background-image: url(../images/navigation.svg);
+    background-size: 100%; /* 或者 contain, 100px 50px, 50% 50% */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 30;
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem;
+}
+.navigation .add{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    top: -0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    text-align:center;
+    left: calc(100% / 2 - 1.6rem);
+    font-size: 2rem;
+}
+.navigation .left,.navigation .right{
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navigation .home,.navigation .search,.navigation .mail,.navigation .my{
+    width: 2.5rem;
+}
+/*导航样式结束*/
+
+@media(min-width: 530px) {
+    .container {
+        width: 29rem;
+    }
+    .navigation{
+        width: 29rem;
+        margin-left: calc((100% - 29rem) / 2);
+        margin-right: calc((100% - 29rem) / 2);
+    }
+}
+/* 针对宽度在 375 到 414 像素之间的设备 */
+@media (min-width: 375px) and (max-width: 414px) {
+    html {
+        font-size: 14px;
+    }    
+}
+@media (min-width: 415px) and (max-width: 529px) {
+    html {
+        font-size: 15px;
+    }    
+}

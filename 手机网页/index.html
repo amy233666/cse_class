@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--容器开始-->
+    <div class="container">
+
+        <!--功能区开始-->
+        <div class="function">
+            <!--设置开始-->
+            <div>
+                <img class="set_up" src="images/set_up.svg" />
+            </div>
+            <!--设置结束-->
+
+            <!--通知开始-->
+            <div class="notice_container">
+                <div>
+                <img class="notice" src="images/notice.svg" />
+                </div>
+
+                <div class="text">12</div>
+            </div>
+            <!--通知结束-->            
+        </div>
+        <!--功能区结束-->
+
+        <!--内容开始-->
+        <main class="content">
+            <!--头像开始-->
+            <div class="profile_picture_container">
+                <img class="profile_picture" src="images/profile_picture.png" />
+            </div>
+            <!--头像结束-->
+
+            <!--文本开始-->
+            <div class="text">
+                <h1>OIivia Jones</h1>
+                <p>Location: DT Seattle<br>Role: Barista</p>
+            </div>
+            <!--文本结束-->
+
+            <!--标签开始-->
+            <div class="label">
+                <ul>
+                    <li>
+                        <p class="value">312</p>
+                        <p class="name">Followers</p>
+                    </li>
+                    <li>
+                        <p class="value">12</p>
+                        <p class="name">Polls</p>
+                    </li>
+                    <li>
+                        <p class="value">1012</p>
+                        <p class="name">Likes</p>
+                    </li>
+                    <li>
+                        <p class="value">1111</p>
+                        <p class="name">Views</p>
+                    </li>
+                </ul>
+            </div>
+            <!--标签结束-->
+
+            <!--选项卡开始-->
+            <div class="tab">
+                <ul>
+                    <li class="item_change" onclick="bianguan1()">Updates</li>
+                    <li class="item" onclick="bianguan1()">All Polls</li>
+                    <li class="item" onclick="bianguan()">About</li>
+                </ul>
+            </div>
+            <!--选项卡结束-->
+
+            <!--详细内容开始-->
+            <div id="details" class="details">
+                <ul>
+                    <li class="item">
+                        <div class="message">
+                            <div class="note">
+                                <span class="left">A poll just <span style="color: blue;">passed</span>!</span>
+                                <span class="right">15 mins ago</span>
+                            </div>
+                            <div class="message_text">
+                                <p>Let's add clear ground markings to ensure everyone knows exactly where to stand. This will help maintain order and efficiency!</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <span>#Work Space</span>
+                                </div>
+                                <div class="right">
+                                    <span class="thumbs_up">1312</span>
+                                    <span class="browse">12k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="picture_container">
+                                <p><img class="profile_picture" src="images/profile_picture.png" /></p>
+                                <p class="name">James Johnson</p>
+                            </div>
+                            <div class="comment_text">
+                                <p>Manager Commented: <b>Great! Will take that.</b></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="message">
+                            <div class="note">
+                                <span class="left">A poll just <span style="color: blue;">passed</span>!</span>
+                                <span class="right">15 mins ago</span>
+                            </div>
+                            <div class="message_text">
+                                <p>Let's add clear ground markings to ensure everyone knows exactly where to stand. This will help maintain order and efficiency!</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <span>#Work Space</span>
+                                </div>
+                                <div class="right">
+                                    <span class="thumbs_up">1312</span>
+                                    <span class="browse">12k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="picture_container">
+                                <p><img class="profile_picture" src="images/profile_picture.png" /></p>
+                                <p class="name">James Johnson</p>
+                            </div>
+                            <div class="comment_text">
+                                <p>Manager Commented: <b>Great! Will take that.</b></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="message">
+                            <div class="note">
+                                <span class="left">A poll just <span style="color: blue;">passed</span>!</span>
+                                <span class="right">15 mins ago</span>
+                            </div>
+                            <div class="message_text">
+                                <p>Let's add clear ground markings to ensure everyone knows exactly where to stand. This will help maintain order and efficiency!</p>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <span>#Work Space</span>
+                                </div>
+                                <div class="right">
+                                    <span class="thumbs_up">1312</span>
+                                    <span class="browse">12k</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="picture_container">
+                                <p><img class="profile_picture" src="images/profile_picture.png" /></p>
+                                <p class="name">James Johnson</p>
+                            </div>
+                            <div class="comment_text">
+                                <p>Manager Commented: <b>Great! Will take that.</b></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="details_about" class="details_about">
+                <div class="div1">
+                    <p>Email:oliviajones526@gmail.com</p>
+                </div>
+                <div class="div2">
+                    <p>Team:James Johnson's team</p>
+                </div>
+                <div class="div3">
+                    <p>About:I am a Senior Barista at Starbucks in downtown Seattle.With a background in Environmental Science from the University of Washington, I blend my passion for sustainable living with my love for coffee.</p>
+                </div>
+            </div>
+            <!--详细内容结束-->
+        </main>
+        <!--内容结束-->
+    </div>
+    <!--容器结束-->
+
+    <!--导航开始-->
+    <nav class="navigation">
+        <div class="left">
+            <a href="#">
+                <img class="home" src="images/home.svg" />
+            </a>
+            <a href="#">
+                <img class="search" src="images/search.svg" />
+            </a>
+        </div>
+        <div class="right">
+            <a href="#">
+                <img class="mail" src="images/mail.svg" />
+            </a>
+            <a href="#">
+                <img class="my" src="images/my.svg" />
+            </a>
+        </div>
+        <div class="add">+</div>
+    </nav>
+    <!--导航结束-->            
+    <script>
+        function bianguan()
+        {
+            details.style.display="none";
+            details_about.style.display="block";
+        }
+        function bianguan1()
+        {
+            details.style.display="block";
+            details_about.style.display="none";
+        }
+    </script>
+</body>
+</html>
